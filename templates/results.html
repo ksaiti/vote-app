@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting Results</title>
+</head>
+<body>
+    <h1>Voting Results</h1>
+    <ul>
+        {% for singer, count in votes.items() %}
+            <li>{{ singer }}: {{ count }} votes</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Vote</a>
+</body>
+</html>

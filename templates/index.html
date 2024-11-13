@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote for Your Favorite Singer</title>
+</head>
+<body>
+    <h1>Vote for Your Favorite Singer</h1>
+    <form method="post" action="/vote">
+        {% for singer in singers %}
+            <input type="radio" name="singer" value="{{ singer }}" required> {{ singer }}<br>
+        {% endfor %}
+        <button type="submit">Vote</button>
+    </form>
+</body>
+</html>
